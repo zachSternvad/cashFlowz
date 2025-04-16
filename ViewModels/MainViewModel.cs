@@ -83,7 +83,7 @@ namespace cashFlowz.ViewModels
 
         partial void OnNewTransactionAmountChanged(decimal value)
         {
-
+            ((RelayCommand)AddTransactionCommand).NotifyCanExecuteChanged();
         }
     }
 }
